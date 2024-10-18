@@ -6,12 +6,35 @@
 
 
 :root{
-    --roxo:color()
+    --roxo: color(#03045e);
+    --azu: color(#3a0ca3);
+    --roza: color(#ff006e);
+    --preto: color(#000814);
+    --preto-azulado:(#001d3d);
+    --azul-marinho:(#005f73);
 --fonte-titulo: "Inter", sans-serif;
 --fonte-texto: "Afacad Flux", sans-serif;
 }
 body{
-    background-color:var(--roxo)
-    font-family: var(--fonte-texto);
+    background-color:var(--roxo);
+    font-family:var(--fonte-texto);
 }
+.cabecalho{
+    background-color: var(--preto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    
+}
+.cabecalho-img{
+    width: 10%;
+    border-radius: 100%;
+}
+.cabecolho-link:hover{
+    text-emphasis: none;
+    font-family:var(--fonte-titulo);
+    color: var(--roza);
+    margin-right: 24px ;
 
+}
