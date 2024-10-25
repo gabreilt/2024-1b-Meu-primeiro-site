@@ -1,40 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
 
-:root{
+:root {
     --roxo: color(#03045e);
     --azu: color(#3a0ca3);
     --roza: color(#ff006e);
     --preto: color(#000814);
-    --preto-azulado:(#001d3d);
-    --azul-marinho:(#005f73);
---fonte-titulo: "Inter", sans-serif;
---fonte-texto: "Afacad Flux", sans-serif;
+    --preto-azulado: (#001d3d);
+    --azul-marinho: (#005f73);
+    --fonte-titulo: "Inter", sans-serif;
+    --fonte-texto: "Afacad Flux", sans-serif;
 }
-body{
-    background-color:var(--roxo);
-    font-family:var(--fonte-texto);
+
+body {
+    background-color: var(--roxo);
+    font-family: var(--fonte-texto);
 }
-.cabecalho{
+
+.cabecalho {
     background-color: var(--preto);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px;
-    
+
 }
-.cabecalho-img{
+
+.cabecalho-img {
     width: 10%;
     border-radius: 100%;
 }
-.cabecolho-link:hover{
-    text-emphasis: none;
-    font-family:var(--fonte-titulo);
-    color: var(--roza);
-    margin-right: 24px ;
 
+.cabecolho-link:hover {
+    text-emphasis: none;
+    font-family: var(--fonte-titulo);
+    color: var(--roza);
+    margin-right: 24px;
+
+}
+
+.principal-capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-image: url(img/fundo.png);
+    background-repeat: no-repeat;
+    margin-left: 12px;
+    padding: 24px 12px;
+}
+
+.principal-capa__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.principal-capa__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 32px;
+    color: var(--roza);
+    margin-bottom: 12px;
+}
+
+.principal-capa__texto {
+    font-size: 24px;
+    margin-top: 24px;
+}
+.principalcapa__combotao{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+.principal-capa___botao{
+background-color: var(--azul-marinho);
+text-decoration: none;
+padding: 1.3em;
+color: var(--preto);
+margin-top: 2em;
 }
